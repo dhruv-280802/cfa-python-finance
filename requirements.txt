@@ -1,0 +1,9 @@
+numpy
+pandas
+yfinance
+scipy
+statsmodels
+scikit-learn
+matplotlib
+wordcloud
+xgboost

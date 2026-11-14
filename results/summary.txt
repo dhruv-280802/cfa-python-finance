@@ -1,0 +1,446 @@
+CFA Python — from basics to portfolio models
+Generated: 2026-11-14 09:23
+Data source: REAL (Yahoo Finance, cached)
+Sample: 2021-11-15 to 2026-11-13 (1255 trading days)
+Assets: SPY, AAPL, MSFT, TLT (daily adjusted closes)
+
+[A01  Variables & data types]
+spy_start: 437.188
+spy_end: 754.37
+value_of_10k: 17255
+spy_total_return: 0.725503
+spy_cagr: 0.115428
+
+[A02  Lists, dicts, sets]
+n_monthly: 60
+avg_monthly_return: 0.0105432
+best_month: 0.105053
+worst_month: -0.092446
+positive_months: 37
+
+[A03  Control flow]
+up_days: 603
+down_days: 523
+flat_days: 128
+longest_up_streak: 10
+recent_60d_return: -0.00833563
+regime: mild downtrend
+
+[A04  Functions & modules]
+SPY_hpr: 0.725503
+AAPL_hpr: 1.43341
+MSFT_hpr: 0.624256
+TLT_hpr: -0.345408
+SPY_cagr: 0.115428
+AAPL_cagr: 0.194918
+MSFT_cagr: 0.102003
+TLT_cagr: -0.0813529
+
+[A05  NumPy arrays]
+spy_ann_mean: 0.124634
+spy_ann_vol: 0.173345
+corr_aapl_msft: 0.5271
+corr_spy_tlt: 0.0906031
+
+[A06  pandas Series & DataFrames]
+spy_mean_price: 524.589
+spy_best_month: 0.105053
+spy_worst_month: -0.092446
+spy_roll60_vol: 0.148151
+
+[A07  Reading financial data]
+sample_rows: 60
+sample_last_spy: 756.97
+daily_rows: 1255
+
+[A08  Visualization]
+last12_best: 0.105053
+last12_worst: -0.0493795
+last12_mean: 0.00982555
+
+[A09  Errors & defensive coding]
+bogus_fetch: None
+spy_fetch: 754.37
+spy_sharpe: 0.718991
+flat_sharpe: None
+
+[A10  Dates, time & calendars]
+calendar_days: 1824
+trading_days: 1255
+worst_day_return: -0.0585429
+best_day_return: 0.105019
+holding_act360: 5.06667
+holding_30360: 4.99444
+
+[A11  Classes & objects]
+portfolio_final_value: 154854
+portfolio_total_return: 0.541478
+portfolio_vol: 0.167673
+portfolio_sharpe: 0.369141
+
+[A12  Portfolio returns, risk & Sharpe]
+port_return: 0.101895
+port_vol: 0.167673
+port_sharpe: 0.369141
+port_max_dd: -0.282024
+avg_solo_vol: 0.223892
+buy_hold_wealth: 1.54854
+rebalanced_wealth: 1.51942
+rolling_sharpe_latest: 0.488131
+
+[B01  Data cleaning]
+missing_before: 5
+missing_after: 0
+duplicates_removed: 3
+returns_winsorized: 26
+
+[B02  Descriptive statistics]
+SPY_mean: 0.000494578
+SPY_median: 0.000559799
+SPY_std: 0.0109197
+SPY_skew: 0.279912
+SPY_kurt: 8.81745
+SPY_q05: -0.0166503
+SPY_q95: 0.0168229
+AAPL_mean: 0.000865971
+AAPL_median: 0.00111468
+AAPL_std: 0.0177385
+AAPL_skew: 0.389668
+AAPL_kurt: 6.54434
+AAPL_q05: -0.0271929
+AAPL_q95: 0.0283492
+MSFT_mean: 0.000546355
+MSFT_median: 0.000491521
+MSFT_std: 0.0179223
+MSFT_skew: 0.596156
+MSFT_kurt: 6.98943
+MSFT_q05: -0.0270266
+MSFT_q95: 0.02751
+TLT_mean: -0.000289523
+TLT_median: -0.000113541
+TLT_std: 0.00983488
+TLT_skew: 0.0365903
+TLT_kurt: 0.616935
+TLT_q05: -0.0165178
+TLT_q95: 0.0161342
+spy_jarque_bera_p: 0
+
+[B03  Hypothesis testing]
+spy_ttest_p: 0.108993
+aapl_msft_ttest_p: 0.653582
+spy_mean_ci_lo: -0.000110388
+spy_mean_ci_hi: 0.00109954
+
+[B04  Regression (OLS)]
+corr_aapl_spy: 0.708755
+aapl_beta: 1.15134
+aapl_alpha_daily: 0.000296546
+simple_r2: 0.502334
+multiple_r2: 0.502514
+tlt_beta: 0.0243029
+tlt_beta_p: 0.501128
+
+[B05  Time-series basics]
+adf_price_p: 0.980383
+adf_returns_p: 0
+autocorr_lag1: -0.0346998
+autocorr_sq_lag1: 0.176242
+ar1_phi: -0.0347003
+ar1_phi_p: 0.219658
+rolling_vol_latest: 0.148151
+rolling_vol_max: 0.346221
+
+[B06  Monte Carlo simulation]
+mc_expected: 117544
+mc_median: 114876
+mc_p5: 81049.8
+mc_p95: 163381
+mc_p_loss: 0.2616
+mc_p_gain20: 0.4191
+spy_mc_p5: 83979.2
+spy_mc_p_loss: 0.2629
+
+[B07  Financial model (AAPL DCF)]
+aapl_fcf_bn: 136.056
+aapl_intrinsic: 171.494
+aapl_market_price: 356.27
+aapl_implied_upside: -0.518639
+dcf_table: see dcf_sensitivity.csv (3 rows x 3 cols)
+
+[B08  ML prediction workflow]
+ml_train_acc: 0.526316
+ml_test_acc: 0.533333
+ml_baseline: 0.533333
+ml_model: logit
+
+[B09  Text & sentiment analysis]
+sentiment_agree: 9
+sentiment_n: 12
+sentiment_corr: 0.727924
+
+[B10  Backtesting a rule]
+ma_total: 0.662984
+ma_sharpe: 0.867768
+ma_mdd: -0.187552
+bh_total: 0.725503
+bh_sharpe: 0.718991
+ma_trades: 3
+ma_oos_total: 0.100939
+bh_oos_total: 0.292978
+
+[C01  Time value of money]
+fv_10k: 16288.9
+pv_10k: 6139.13
+annuity_pv: 7721.73
+annuity_fv: 12577.9
+mortgage_pmt: 1798.65
+project_npv: 13723.6
+project_irr: 0.152382
+bond_price: 925.613
+bond_ytm: 0.06
+
+[C02  Portfolio theory & CAPM]
+min_vol: 0.1218
+min_vol_return: 0.0236433
+max_sharpe: 0.632659
+max_sharpe_return: 0.210771
+eq_weight_vol: 0.167673
+eq_weight_return: 0.101895
+msft_beta: 1.12972
+msft_alpha: 0.0020688
+msft_r2: 0.473786
+frontier: see efficient_frontier.csv (5000 rows x 3 cols)
+
+[C03  VaR & Expected Shortfall]
+hist_var_95%: 21386.1
+hist_es_95%: 30116.9
+param_var_95%: 21529.2
+param_es_95%: 27159.9
+var95_breaches: 63
+var95_expected_breaches: 62.7
+hist_var_99%: 35435.6
+hist_es_99%: 42731.3
+param_var_99%: 30712.4
+param_es_99%: 35278.8
+
+[C04  Options (Black-Scholes)]
+spy_price: 754.37
+strike: 754
+realised_vol: 0.148151
+call_price: 14.3362
+put_price: 11.4571
+call_delta: 0.544111
+call_gamma: 0.0122898
+call_theta: -0.367452
+call_vega: 0.863452
+binomial_price: 14.3355
+parity_gap: -5.68434e-14
+
+[C05  Fixed income & duration]
+curve_source: REAL (Yahoo Finance Treasury yield indices)
+y10: 0.05154
+bond_price: 986.54
+bond_ytm: 0.0517411
+mac_duration: 7.95398
+mod_duration: 7.75339
+convexity: 73.0638
+price_change_1pct: -74.9844
+
+[C06  Performance measurement]
+port_ann_return: 0.16018
+bench_ann_return: 0.124634
+port_sharpe: 0.561818
+bench_sharpe: 0.488238
+port_sortino: 0.825875
+bench_sortino: 0.675171
+port_calmar: 0.576385
+bench_calmar: 0.508784
+port_max_dd: -0.277905
+bench_max_dd: -0.244964
+alpha: 0.0276173
+beta: 1.09369
+info_ratio: 0.354054
+tracking_error: 0.100398
+years_won: 3
+yearly: see yearly_excess_returns.csv (6 rows x 3 cols)
+
+[D01  yfinance end to end]
+yfin_price_days: 251
+yfin_dividends: 93
+yfin_splits: 5
+yfin_market_cap_tn: 5.17738
+yfin_trailing_pe: 39.6737
+yfin_latest_revenue_bn: 478.834
+yfin_option_expiries: 23
+yfin_nearest_calls: 44
+yfin_nearest_puts: 47
+
+[D02  Statements -> features]
+features_rows: 8
+features_table: see d02_financial_features.csv (8 rows x 21 cols)
+
+[D03  Missing values & encoding]
+stmt_missing_cells: 51
+info_rows: 4
+encoded_cols: 4
+
+[D04  Regression & least squares]
+ols_beta_spy: 1.15134
+ols_r2_simple: 0.502334
+ols_r2_multiple: 0.505534
+ols_jb_p: 3.88762e-219
+ols_bp_p: 0.0197937
+ols_shapiro_p: 1.6781e-20
+ols_adf_price_p: 0.980383
+ols_adf_return_p: 0
+ols_white_p: 1.64959e-06
+ols_reset_p: 0.00202683
+ols_max_vif: 1.9214
+
+[D05  scikit-learn workflow]
+ml_ridge_rmse_test: 0.0153348
+ml_ridge_r2_test: -0.00799359
+ml_ridge_r2_train: 0.0118313
+ml_n_days: 1204
+
+[D06  Feedforward neural network]
+ann_rmse_test: 0.0164608
+ann_r2_test: -0.161461
+ann_r2_ridge: -0.00799359
+ann_iterations: 198
+
+[D07  Random forest + XGBoost]
+tree_rf_rmse_test: 0.0154856
+tree_rf_r2_test: -0.0279187
+tree_xgb_rmse_test: 0.0161338
+tree_xgb_r2_test: -0.115772
+tree_top_feature: ma_ratio
+
+[D08  Hyperparameter tuning]
+tune_ridge_alpha: 1000
+tune_ridge_r2_test: -0.000935853
+tune_forest_r2_test: -0.01693
+tune_forest_params: {'max_depth': 3, 'max_features': 0.6}
+
+[D09  Text cleaning & tokenisation]
+nlp_vocab_size: 120
+nlp_max_len: 9
+nlp_top_word: shares
+
+[D10  LSTM from scratch (NumPy)]
+lstm_loss_final: 0.00408053
+lstm_acc_train: 1
+lstm_acc_test: 0.625
+
+[D11  Sentiment: TF-IDF baseline]
+tfidf_acc_test: 0.5
+tfidf_top_positive: ['surge', 'raises', 'strong', 'outlook', 'beat']
+tfidf_top_negative: ['concerns', 'plunge', 'fall', 'fears', 'manufacturing']
+
+[D12  Stats libraries (scipy/statsmodels)]
+stats_jb_p: 0
+stats_shapiro_p: 3.67011e-20
+stats_ks_p: 3.70546e-05
+stats_ttest_mean_p: 0.0840983
+stats_pearson: 0.708755
+stats_spearman: 0.6467
+stats_beta: 1.15134
+stats_beta_ci_lo: 1.0878
+stats_beta_ci_hi: 1.21488
+
+[D13  Matplotlib for finance]
+charts_saved: 4
+spy_above_both_ma: False
+tail_share_3sigma: 0.0111643
+max_sharpe: 0.627256
+min_vol: 0.121636
+
+[E01  OLS diagnostics (full battery)]
+diag_max_vif: 1.9214
+diag_bp_p: 0.0197937
+diag_white_p: 1.64959e-06
+diag_dw: 1.79438
+diag_bg_p: 0.000783269
+diag_jb_p: 3.88762e-219
+diag_reset_p: 0.00202683
+
+[E02  Event study (earnings)]
+event_n: 8
+event_mean_car: 0.0101645
+event_t_stat: 0.426644
+event_surprise_corr: 0.298981
+
+[E03  Fama-French 3-factor]
+ff3_alpha: 0.000285596
+ff3_alpha_p: 0.423245
+ff3_beta_mkt: 1.11666
+ff3_beta_smb: -0.240615
+ff3_beta_hml: -0.182138
+ff3_r2: 0.514152
+capm_r2: 0.500207
+
+[E04  GARCH(1,1) volatility]
+garch_alpha: 0.08
+garch_beta: 0.88
+garch_persistence: 0.96
+garch_half_life_days: 16.9797
+garch_long_run_vol_ann: 0.193729
+garch_forecast_10d_ann: 0.215771
+garch_cond_vol_today_ann: 0.22607
+
+[E05  Options Greeks + implied vol]
+iv_atm: 0.101137
+greek_delta: 0.539252
+greek_gamma: 0.0702969
+greek_theta_day: -0.604842
+greek_vega: 0.221694
+iv_smile_range: 0.0859926
+
+[E06  Yield-curve bootstrapping]
+yc_par_3m: 0.04122
+yc_par_10y: 0.05154
+yc_zero_10y: 0.0521048
+yc_slope_10y_3m: 0.01032
+yc_fwd_5y5y: 0.054012
+
+[E07  Pairs trading / stat arb]
+pairs_coint_p: 0.0273379
+pairs_hedge_ratio: 5.49627
+pairs_half_life_days: 29.4426
+pairs_z_now: -1.09709
+pairs_corr: 0.843873
+
+[E08  Backtest with costs]
+bt_trades: 3
+bt_cost_drag_pp_yr: 0.0332931
+bt_sharpe_gross: 0.53415
+bt_sharpe_net: 0.531546
+bt_sharpe_buy_hold: 0.437626
+bt_total_net: 0.663009
+
+[E09  Risk parity]
+rp_weights: {'SPY': 0.24740412242642842, 'AAPL': 0.16325138903092962, 'MSFT': 0.16749722894513386, 'TLT': 0.4218472595975082}
+rp_vol: 0.13998
+rp_ret: 0.0587438
+rp_max_rc_dev: 0.000155633
+
+[E10  Black-Litterman]
+bl_pi_aapl: 0.0997051
+bl_post_aapl: 0.104373
+bl_post_msft: 0.0939174
+bl_max_tilt: 0.131465
+bl_weights: {'SPY': 1.3772192599173916e-17, 'AAPL': 0.6532823165452204, 'MSFT': 0.34671768345477977, 'TLT': 0.0}
+
+[E11  Performance attribution]
+attr_active_total: 0.284262
+attr_alloc_total: 0.154067
+attr_select_total: 0.104156
+attr_interact_total: 0.0260389
+attr_sum_check: 0
+
+[E12  Drawdown analysis]
+dd_ew_max: -0.282024
+dd_spy_max: -0.244964
+dd_ew_underwater: 0.929027
+dd_ew_recovery_days: 756
+
